@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_view_heading"
+        android:layout_width="match_parent"
+        android:layout_toStartOf="@+id/card_view_image_container"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#272727"
+        android:layout_height="wrap_content"
+        tools:text="1. Item heading."/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:id="@+id/my_rating_bar"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/card_view_image_container"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        tools:rating="3.5f"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text= "This will be the Description. I will do a long description to see what it looks like"
+        android:textSize="14sp"
+        android:layout_below="@+id/text_view_heading"
+        android:layout_toStartOf="@+id/card_view_image_container"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#777777"
+        android:layout_marginTop="8dp"
+        android:id="@+id/text_view_description"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        app:cardCornerRadius="16dp"
+        android:id="@+id/card_view_image_container"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/item_picture"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/download__1_"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

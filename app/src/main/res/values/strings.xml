@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pelumi\'s Personalized Bucket List</string>
+    <string name="bentley">bentley</string>
+    <string name="things_to_do">things to do</string>
+    <string name="todo">TODO</string>
+    <string name="places_to_go">Places to Go</string>
+</resources>
